@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(to bottom, #02045b, #113285, #fffdff);
+  font-family: 'Quicksand', sans-serif;
+  color: #fefeff;
+  overflow: hidden;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#bg-canvas, #fx-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+.card { 
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 50px 20px;
+}
+h1 {
+  font-family: 'Quicksand', cursive;
+  font-size: 3rem;
+  color: #f1eff0;
+}
+h2 {
+  font-family: 'Quicksand', cursive;
+  font-size: 2rem;
+  color: #1c0379;
+}
+.message {
+  background: linear-gradient(145deg, #ffffffdd, #f0f4ffcc);
+  border-radius: 24px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+  padding: 32px 36px;
+  max-width: 600px;
+  margin: 40px auto;
+  text-align: center;
+  color: #2c2c54;
+  font-size: 1.15rem;
+  line-height: 1.8;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(8px);
+}
+
+.message:hover {
+  transform: scale(1.015);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.2);
+}
+
+
+#press-btn {
+  padding: 12px 24px;
+  font-size: 1.2em;
+  background-color: #e9f1f6;
+  color: #1e1f5f;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: transform 0.2s ease;
+  max-width: 200px;
+  margin: 16px auto;
+  width: 100%;
+  font-family: "思源柔黑体", "霞鹜文楷", "Alibaba PuHuiTi", "Microsoft YaHei", sans-serif;
+}
+#press-btn:hover {
+  background-color: #c0ebd7;
+  transform: scale(1.05);
+}
+
+#press-btn {
+  touch-action: manipulation;
+}
